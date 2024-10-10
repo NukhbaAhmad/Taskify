@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to left, #BBA3D1, #472397);
+    height: 528px;
+}
+
+/* Heading */
+.container h1 {
+    font-size: 40px;
+    margin: 5%;
+    color: white;
+}
+
+/* Main Box */
+.container {
+    margin: auto;
+    padding-bottom: 3%;
+    margin-top: 7%;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+
+/* Input style */
+.get-task input {
+    height: 35px;
+    outline: none;
+    padding: 20px;
+    border: 1px solid #AAAAAA;
+    width: 70%;
+    border-radius: 4px;
+    margin-left: 5%;
+    font-size: 14px;
+}
+
+/* Box Containing Input + button(Add) and Edit(Button) */
+.get-task {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+}
+
+/* Add Button */
+.get-task button {
+    color: white;
+    background-color: blueviolet;
+    width: 60px;
+    height: 40px;
+    border: 1px solid blueviolet;
+    border-radius: 4px;
+    font-size: 18px;
+    margin-right: 5%;
+    text-align: center;
+}
+
+.Task-box {
+    background-color: white;
+    width: 60%;
+    border-radius: 4px;
+    margin-left: 4%;
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+}
+
+.New-task {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-top: 5px;
+    width: 95%;
+    cursor: pointer;
+
+}
+
+/* Edit_Delete icon */
+.trash-edit {
+    color: white;
+    background-color: rgb(229, 78, 61);
+    width: 50px;
+    border: 1px solid rgb(229, 78, 61);
+    font-size: 22px;
+
+}
+
+/* Edit Icon */
+.Edit {
+    background-color: blueviolet;
+    border: 1px solid blueviolet;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+}
+
+/* Pending Tasks */
+.Task-Pending {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+
+.Task-added-pending {
+    margin-top: 10px;
+}
+
+/* No tasK Added Text */
+.No-Task-added {
+
+    font-size: 14px;
+    margin-left: 5%;
+    color: white;
+
+}
+
+.Task-Left {
+
+    color: white;
+    font-size: 14px;
+    margin-left: 5%;
+}
+
+/* Clear button */
+#Clear-All {
+    color: white;
+    background-color: blueviolet;
+    width: 50px;
+    height: 35px;
+    border: 1px solid blueviolet;
+    border-radius: 4px;
+    font-size: 22px;
+    margin-right: 50%;
+    text-align: center;
+}
+
+/* Strike on click */
+.strike {
+    text-decoration: line-through;
+    cursor: pointer;
+}
+
+/* Task Box styling */
+.Task-added {
+    max-height: 160px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-top: 10px;
+}
+
+.Task-added::-webkit-scrollbar {
+    display: none;
+}
+
+/* Edit Buttom */
+#Edit_button_id {
+    font-size: 16px;
+}
+
+/* Toastr Styling */
+#toast-container>.Toastr_style {
+    background-color: blueviolet;
+    font-size: 15px;
+    border-left: 10px solid white;
+    border-radius: 5px;
+    color: white;
+    box-shadow: none;
+}
+
+#toast-container>.Toastr_style:hover {
+    box-shadow: none;
+}
